@@ -4,6 +4,51 @@
   
     
     <entry>
+      <title><![CDATA[数列]]></title>
+      <url>http://gracemath.gitbub.io/2016/12/03/series/</url>
+      <content type="html"><![CDATA[<h1 id="数列"><a href="#数列" class="headerlink" title="数列"></a>数列</h1><ul>
+<li>定义：有序的一列数。</li>
+<li>表示方法：</li>
+</ul>
+<ol>
+<li>枚举法（最常见）：1，2，3，4，5，6…</li>
+<li><strong><em>通项公式</em></strong>：$a_n = f(n)$, 理解：<strong>数列是一种特殊的函数</strong>，特殊在定义域上，定义域 是从1开始的自然数，所以说，数列又可以从函数解析式的角度来分析数列特征。</li>
+<li>递推公式：$a_{n+1} = f(a_n)$,理解：递推公式是最直观的，比如说等差数列就是后一项和前一项的差相等，但是递推公式不利于分析数列的性质，比如想知道第100项是多少，就需要由递推公式去推出通项公式。</li>
+<li>求和公式：$S_n$，理解:$S_n$和$a_n$的关系<br>$a_1=S_1,a_n=S_n-S_n$</li>
+</ol>
+<p><strong><em>难点</em></strong>：</p>
+<ul>
+<li><p>递推公式–&gt;通项公式</p>
+</li>
+<li><p>通项公式–&gt; 求和公式</p>
+</li>
+</ul>
+<p><strong><em>一般考察思路</em></strong></p>
+<p>$\frac{a_n}{S_n}$–&gt;递推公式–&gt;通项公式–&gt;$S_n$–&gt;不等式(中间截断一段或者几段)</p>
+<h2 id="等差数列"><a href="#等差数列" class="headerlink" title="等差数列"></a>等差数列</h2><ol>
+<li>递推公式：$a_{n+1} = a_n + d$(d可以是0) $a_n = a_m + (n-m)d$</li>
+<li>通项公式：$a_n = a_1 + (n-1)d = f(n)$(可以把这个式子看成一个关于n的一次函数)($记1$) $=dn+(a_1 - d)$(一次项系数为d($记2$)，这个式子递增递减的变化取决于公差d($记3$))</li>
+<li>求和： $S_n = \frac{(a_1+a_n)n}{2}$(把$a_n$的式子代入) = ${na_1} + \frac{n(n-1)}{2}d$(更常用)=$\frac{d}{2}n^2+(a_1-\frac{d}{2}n)$(可看成二次函数，无常数项。二次项系数为 $\frac{d}{2}$,决定开口方向。(记4)–&gt;从函数的角度看一个数列的 $S_n$有没有最大值和最小值是由$d$的正负决定的)</li>
+</ol>
+<h3 id="考点"><a href="#考点" class="headerlink" title="考点"></a>考点</h3><ol>
+<li>由数列函数性质速算通项公式和求和公式。</li>
+</ol>
+<p>例题1.已知一个等差数列{ $a_n$ }, $a_2 = 5$, $a_5 = 7$, 求通项公式。</p>
+<p>解析:</p>
+<ol>
+<li>通常解法：求通项公式, 求$a_1$求$d$</li>
+</ol>
+<p>$d=\frac{a_5-a_2}{3}=\frac{2}{3},a_1=\frac{13}{3},a_n=a_1+(n-1)d=\frac{13}{3}+(n-1)\frac{2}{3}=\frac{2}{3}n+\frac{11}{3}$</p>
+<ol>
+<li>口算解法：把$a_n$看成一个函数$a_n=dn+(a_1-d)$(由$记2$,只需要记住一次项系数为d)所以 $a_n=\frac{2}{3}n+$ 一个数，然后代入 $a_2$ ，解得那个数是 $\frac{11}{3}$</li>
+</ol>
+<p><strong><em>To BE Continue…</em></strong></p>
+<hr>
+<p><a href="http://pan.baidu.com/s/1eRIvrqi" target="_blank" rel="external">完整文本下载(请点击)</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Hello World]]></title>
       <url>http://gracemath.gitbub.io/2016/12/03/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
