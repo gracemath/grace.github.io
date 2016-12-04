@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title><![CDATA[数列]]></title>
+      <title><![CDATA[数列总结]]></title>
       <url>http://gracemath.gitbub.io/2016/12/03/series/</url>
       <content type="html"><![CDATA[<h1 id="数列"><a href="#数列" class="headerlink" title="数列"></a>数列</h1><ul>
 <li>定义：有序的一列数。</li>
@@ -14,7 +14,7 @@
 <li>枚举法（最常见）：1，2，3，4，5，6…</li>
 <li><strong><em>通项公式</em></strong>：$a_n = f(n)$, 理解：<strong>数列是一种特殊的函数</strong>，特殊在定义域上，定义域 是从1开始的自然数，所以说，数列又可以从函数解析式的角度来分析数列特征。</li>
 <li>递推公式：$a_{n+1} = f(a_n)$,理解：递推公式是最直观的，比如说等差数列就是后一项和前一项的差相等，但是递推公式不利于分析数列的性质，比如想知道第100项是多少，就需要由递推公式去推出通项公式。</li>
-<li>求和公式：$S_n$，理解:$S_n$和$a_n$的关系<br>$a_1=S_1,a_n=S_n-S_n$</li>
+<li>求和公式：$S_n$，理解:$S_n$和$a_n$的关系<br>$$<br>\begin{equation}<br>a_n=<br>\begin{cases}<br>S_n-S{n-1}\cr<br>S_1\cr<br>\end{cases}<br>\end{equation}<br>$$</li>
 </ol>
 <p><strong><em>难点</em></strong>：</p>
 <ul>
@@ -36,10 +36,9 @@
 <p>例题1.已知一个等差数列{ $a_n$ }, $a_2 = 5$, $a_5 = 7$, 求通项公式。</p>
 <p>解析:</p>
 <ol>
-<li>通常解法：求通项公式, 求$a_1$求$d$</li>
-</ol>
-<p>$d=\frac{a_5-a_2}{3}=\frac{2}{3},a_1=\frac{13}{3},a_n=a_1+(n-1)d=\frac{13}{3}+(n-1)\frac{2}{3}=\frac{2}{3}n+\frac{11}{3}$</p>
-<ol>
+<li><p>通常解法：求通项公式, 求$a_1$求$d$</p>
+<p> $d=\frac{a_5-a_2}{3}=\frac{2}{3},a_1=\frac{13}{3},a_n=a_1+(n-1)d=\frac{13}{3}+(n-1)\frac{2}{3}=\frac{2}{3}n+\frac{11}{3}$</p>
+</li>
 <li>口算解法：把$a_n$看成一个函数$a_n=dn+(a_1-d)$(由$记2$,只需要记住一次项系数为d)所以 $a_n=\frac{2}{3}n+$ 一个数，然后代入 $a_2$ ，解得那个数是 $\frac{11}{3}$</li>
 </ol>
 <p><strong><em>To BE Continue…</em></strong></p>
